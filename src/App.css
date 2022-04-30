@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap');
+
+
+/* font-family: 'Oswald', sans-serif; */
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #3d1457 0%,#3d1457 100%);
+}
+
+body {
+  background: linear-gradient(to bottom right, #3d1457 0%,#3d1457 100%);
+  position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+}
+
+h1,h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  color: #fff;
+  opacity: 75%;
+  font-size: 1rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+section, footer {
+  background-color: #3d1457;
+  padding: 60px 0;
+}
+
+/*====================SCROLL=========================*/
+
+::-webkit-scrollbar {
+  width: 3px;
+  background: #3d1457;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: rgb(202, 52, 102);
+}

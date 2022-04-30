@@ -1,0 +1,23 @@
+.work__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.single__work {
+    background-color: rgb(43, 223, 73);
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom: 4px solid rgb(202, 52, 102);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 47%;
+}
+
+.work__title {
+    font-weight: 300;
+    color: #fff;
+    font-size: .9rem;
+}
+.work__year {
+    color: #fff;
+}

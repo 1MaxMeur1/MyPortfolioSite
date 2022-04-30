@@ -1,0 +1,26 @@
+.table {
+    border: none;
+    border-collapse: collapse;
+    border: 1px solid greenyellow;
+    border-radius: 10px;
+}
+
+th,td {
+    padding: 1.15rem 1rem !important;
+    font-size: 1rem;
+}
+
+thead {
+    background: rgb(43, 223, 73);
+    color: #fff;
+}
+
+td {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+tr:nth-child(even) {
+    background: rgb(109, 32, 133);
+}
