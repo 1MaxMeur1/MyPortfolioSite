@@ -1,0 +1,74 @@
+.form {
+    width: 100%;
+    background-color: rgb(109, 32, 133);
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 999;
+    position: relative;
+    margin-top: 15px;
+    border-bottom: 4px solid rgb(202, 52, 102);
+}
+
+.form__input input, .form__input textarea {
+    width: 100%;
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.submit__btn {
+    margin-top: 15px;
+    padding: 7px 25px;
+    font-size: 0.9rem;
+    background-color: rgb(43, 223, 73);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.submit__btn:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    height: 150px;
+}
+
+.ri-loader-2-fill {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20px;
+    right: 26px;
+    animation: changeColor 2s infinite ease-in-out;
+}
+
+@keyframes changeColor {
+    0% {
+        color: crimson;
+        font-size: 2.1rem;
+    }
+    25% {
+        color: coral;
+        font-size: 2rem;
+    }
+
+    50% {
+        color: chocolate;
+        font-size: 2.1rem;
+    }
+
+    75% {
+        color: cyan;
+        font-size: 2rem;
+    }
+
+    100% {
+        color: fuchsia;
+        font-size: 2.1rem;
+    }
+}

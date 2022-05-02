@@ -1,0 +1,32 @@
+#contact {
+    margin-top: 15px;
+}
+.single__info-box {
+    background-color: rgb(109, 32, 133);
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 4px solid rgb(202, 52, 102);
+    transition: .5s;
+    z-index: 999;
+    position: relative;
+    width: 45%;
+}
+
+.single__info-box:hover {
+    transform: scale(1.2);
+}
+
+.single__info-box p {
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: .9rem;
+}
+
+.single__info-box h6 {
+    font-size: 1.1rem;
+}
+
+.contact__info-container {
+    display: flex;
+    justify-content: space-between;
+}

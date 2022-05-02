@@ -10,7 +10,7 @@ const Avatar = require('../../assets/avatar.jpg')
 const About: React.FC = () => {
     const [aboutFilter, setAboutFilter] = useState('ABOUT')
   return (
-    <section className='about'>
+    <section id='about'>
         <Container>
             <Row>
                 <Col className='mb-5' lg='12'>
@@ -44,10 +44,10 @@ const About: React.FC = () => {
                             <p>Professional Web Developer.</p>
                             <div className="social__links">
                                 <h6 className='mb-3'>Connect with me:</h6>
-                                <span><a href="#"><i className="ri-linkedin-fill"></i></a></span>
-                                <span><a href="#"><i className="ri-github-fill"></i></a></span>
-                                <span><a href="#"><i className="ri-telegram-fill"></i></a></span>
-                                <span><a href="#"><i className="ri-mail-send-line"></i></a></span>
+                                <span><a href="https://www.linkedin.com/in/maxim-murzanev-42a075214/"><i className="ri-linkedin-fill"></i></a></span>
+                                <span><a href="https://github.com/1MaxMeur1"><i className="ri-github-fill"></i></a></span>
+                                <span><a href="https://t.me/kytek1"><i className="ri-telegram-fill"></i></a></span>
+                                <span><a href="mailto:1maxmeur1@gmail.com"><i className="ri-mail-send-line"></i></a></span>
                             </div>
                             </div>
                         </div>

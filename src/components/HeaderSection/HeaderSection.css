@@ -41,6 +41,15 @@
     font-weight: 300;
 }
 
+.contact__btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact__btn a:hover {
+    color: #fff;
+}
+
 .cat {
     position: relative;
     height: 170px;
@@ -221,4 +230,11 @@
 .eye--left::before {
     background-color: #fff;
     left: 90%;
+}
+
+
+@media only screen and (max-width: 789px) {
+    section {
+        padding: 0;
+    }
 }

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import './header.css'
 import {Container} from 'reactstrap'
 
@@ -33,7 +33,18 @@ const NavLinks:Array<Link> = [
 
 const Header: React.FC = () => {
 
+
+    const [isMobile, setIsMobile] = useState(false)
+
     const headerRef = useRef() as React.MutableRefObject<HTMLHeadElement>
+
+    const toggleMenu = ():void => {
+        if (isMobile === false) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
 
     useEffect(() => {
         const _observeTopScroll = () => {
@@ -50,6 +61,7 @@ const Header: React.FC = () => {
             window.removeEventListener('scroll', _observeTopScroll)
         }
     }, [])
+
 
     const handleClick = (e: React.ChangeEvent<string | number | any>) => {
         e.preventDefault()
@@ -70,19 +82,36 @@ const Header: React.FC = () => {
                     <div className="logo">
                         <h5>MaxMeur</h5>
                     </div>
-                    <div className="nav__menu">
-                        <ul className="nav__list">
+                    {
+                        isMobile 
+                        ? 
+                        <div className="m__menu" onClick={toggleMenu}>
+                            <ul className='mobile__list'>
+                                {
+                                    NavLinks.map((item:Link, index: number) => 
+                                    <li key={index} className="mobile__item">
+                                        <a href={item.url} onClick={handleClick}>{item.display}</a>
+                                    </li>)
+                                }
+                            </ul>
+                        </div> 
+                        :
+                        <div className="nav__menu">
+                            <ul className="nav__list">
                             {
                                 NavLinks.map((item:Link, index: number) => 
                                 <li key={index} className="nav__item">
-                                    <a href={item.url}>{item.display}</a>
+                                    <a href={item.url} onClick={handleClick}>{item.display}</a>
                                 </li>)
                             }
                         </ul>
                     </div>
+                    }
                     <div className="nav__right d-flex align-items-center gap gap-4">
-                        <button className="nav__right-btn">Let's talk</button>
-                    <span className="mobile__menu"><i className="ri-menu-3-fill"></i></span>
+                        <button className="nav__right-btn"><a href='https://t.me/kytek1'>Let's talk</a></button>
+                    <span className="mobile__menu">
+                        <i className="ri-menu-3-fill" onClick={toggleMenu}></i>
+                    </span>
                 </div>
                 </div>
             </Container>

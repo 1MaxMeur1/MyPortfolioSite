@@ -21,3 +21,9 @@
 .work__year {
     color: #fff;
 }
+
+@media only screen and (max-width: 500px) {
+    .single__work {
+        width: 100%;
+    }
+}

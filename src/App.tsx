@@ -5,7 +5,24 @@ import LayOut from './components/LayOut/LayOut'
 const App: React.FC = () => {
   return (
     <>
-      <LayOut />
+    <div className='context'> 
+    <div className="area">
+    <LayOut />
+      <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+    </div>
+    </div>
     </>
   );
 }

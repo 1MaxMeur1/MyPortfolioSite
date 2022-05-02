@@ -1,0 +1,37 @@
+.single__service {
+    background-color: rgb(109, 32, 133);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid rgb(202, 52, 102);
+    transition: .3s;
+    position: relative;
+    z-index: 999;
+    opacity: 80%;
+}
+
+.service__icon {
+    color: yellowgreen;
+    font-size: 2.2rem;
+}
+
+.services__top h6 {
+    color: yellowgreen;
+    margin-bottom: 15px;
+}
+
+.single__service h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.single__service p {
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.single__service:hover {
+    transform: translateY(-15px);
+    opacity: 100%;
+}

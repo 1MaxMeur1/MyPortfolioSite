@@ -1,6 +1,11 @@
+#about {
+    margin-bottom: 15px;
+}
+
 .about__btns {
     background-color: rgb(109, 32, 133);
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .about__btn {
@@ -76,4 +81,15 @@
 
 .social__links span a {
     text-decoration: none;
+}
+
+.social__links span a i {
+    position: relative;
+}
+
+
+@media only screen and (max-width: 770px) {
+    .about__img {
+        display: none;
+    }
 }

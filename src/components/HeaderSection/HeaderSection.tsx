@@ -35,8 +35,8 @@ const HeaderSection: React.FC = () => {
                         <p>I always keep in mind cross-brwsers and cross-devices issue while I am coding.</p>
                         <p>I also consider accessibility and progressive enhancement as part of my day to day activities and I always keep them in mind if the project let me do that.</p>
                         <div className="mt-4 header-section__btns d-flex align-items-center gap-4">
-                            <button className="header-section__btn hire__btn"><a href="#">Hire me</a></button>
-                            <button className="header-section__btn contact__btn">Contact</button>
+                            <button className="header-section__btn hire__btn"><a href="https://t.me/kytek1">Hire me</a></button>
+                            <button className="header-section__btn contact__btn"><a href='https://t.me/kytek1'>Contact</a></button>
                         </div>
                     </div>
                 </Col>
